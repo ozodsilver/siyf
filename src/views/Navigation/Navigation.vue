@@ -161,6 +161,7 @@ import Dropdown from 'primevue/dropdown';
 
 <style scoped>
 .glass{
+  background-color: rgba(1, 72, 107, 0.151);
     backdrop-filter: blur(4px) ;
     -webkit-backdrop-filter: blur(4px) ; 
 }
