@@ -46,7 +46,7 @@ const images = [
 
 
     {
-        image: new URL('../../assets/images/pngwing.com.png', import.meta.url),
+        image: 'https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg',
         header:'Lorem',
         description:'Lorem massage3434233'
     }
