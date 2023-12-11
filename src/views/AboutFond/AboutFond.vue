@@ -5,9 +5,9 @@
             <TabView>
             <TabPanel>
                 <template #header>
-<div class="flex items-center gap-2">
-    <img src="../../assets/images/pngwing.com.png" class="w-[50px] h-[50px]" alt="">
-<span>Fond haqida</span>
+<div class="flex items-center gap-2 md:px-4">
+    <i class="fas fa-people-carry-box text-white text-xs md:text-3xl"></i>
+<span class="text-[11px] whitespace-nowrap md:text-base">Fond haqida</span>
 
 </div>
                 </template>
@@ -22,9 +22,9 @@
             </TabPanel>
             <TabPanel>
                 <template #header>
-<div class="flex items-center gap-2">
-    <img src="../../assets/images/pngwing.com.png" class="w-[50px] h-[50px]" alt="">
-<span>Maqsad va vazifalar</span>
+<div class="flex items-center gap-2 md:px-4">
+    <i class="fas fa-arrow-trend-up text-xs md:text-3xl"></i>
+<span class="text-[11px] md:text-base whitespace-nowrap" >Maqsad va vazifalar</span>
 
 </div>
                 </template>
@@ -38,9 +38,9 @@
             </TabPanel>
             <TabPanel>
                 <template #header>
-<div class="flex items-center gap-2">
-    <img src="../../assets/images/pngwing.com.png" class="w-[50px] h-[50px]" alt="">
-<span>Rahbariyat</span>
+<div class="flex items-center gap-2 md:px-4">
+    <i class="fas fa-users text-xs md:text-3xl"></i>
+<span class="text-[11px] whitespace-nowrap md:text-base">Rahbariyat</span>
 
 </div>
                 </template>
@@ -77,6 +77,7 @@ import TabPanel from 'primevue/tabpanel';
 
 .aboutfond {
     position: relative;
+    padding-bottom: 50px;
 &:before{
     content: '';
     width: 100%;
@@ -95,12 +96,13 @@ z-index: 444;
     background: transparent;
    padding: 0 10px;
    justify-content: center  ;
+
 }
 
 :deep .p-tabview .p-tabview-nav li .p-tabview-nav-link {
    color: white;
     background: transparent;
-    padding: 19px 16px;
+    padding: 20px 12px;
 }
 
 :deep .p-tabview .p-tabview-nav .p-tabview-ink-bar {

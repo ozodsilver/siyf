@@ -4,18 +4,16 @@
       <Navigation></Navigation>
     </div>
 
-    <Carousel :autoplay="4000" :itemsToShow = '1' :wrap-around="true">
+    <Carousel :autoplay="40000" :itemsToShow = '1' :wrap-around="true">
       <Slide v-for="image in images" :key="image">
-        <div class="carousel__item p-0 "> 
+        <div class="carousel__item p-0 relative top-[-20px] "> 
           <img :src="image.image" class="object-cover w-full h-[600px] brightness-90" alt="">
-      <div class="absolute w-[400px] md:w-[600px] bg_description  p-4 rounded-lg  text-white font-bold  quicksand-700 ">
-        <h1 class="text-start text-3xl uppercase first-letter:text-red-600 first-letter:text-4xl ">{{ image.header }}</h1>
-    <p class="text-sm text-start">   {{ image.description }}</p>
+      <div class="absolute w-[350px] md:w-[900px] bg_description  p-5 rounded-lg  text-white font-bold  quicksand-700 ">
+        <h1 class="text-start text-3xl uppercase first-letter:font-extrabold  first-letter:text-5xl first-letter:text-teal-500  ">{{ image.header }}</h1>
+    <p class="text-xs md:text-base text-start relative mt-2 ">   {{ image.description }}</p>
 
 
-    <div class="bg_description absolute bg-dark z-[77777] top-[-40px] right-0">
-<img src="../../assets/images/pngwing.com.png" class="w-[100px] bg-white" alt="">
-      </div>    
+ 
       </div>
 
      
@@ -107,10 +105,11 @@ const images = [
 }
 
 .bg_description{
-  backdrop-filter: blur(20px) ;
+  backdrop-filter: blur(4px) ;
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     background-color: rgba(188, 192, 197, 0);
     border-radius: 12px;
+
  
 }
 

@@ -10,9 +10,14 @@ import router from './router'
 import PrimeVue from 'primevue/config';
 import 'primevue/resources/themes/mdc-light-deeppurple/theme.css'
 
+
+import Vue3Marquee from 'vue3-marquee'
+
+
 const app = createApp(App)
 
 app.use(createPinia())
+app.use(Vue3Marquee)
 app.use(PrimeVue);
 app.use(router)
 
