@@ -1,13 +1,16 @@
 <template>
 
+<div class="main">
+    <h1 class="text-white bg-transparent text-[50px] Glory-700 text-center">Homiylar</h1>
+    <Vue3Marquee :clone="true" :duration="5" :direction="'reverse'">
+            <img
+                v-for="img in imgArray"
+                :key="img"
+                :src="img"
+            />
+        </Vue3Marquee>
+</div>
 
-<Vue3Marquee :clone="true" :duration="5" :direction="'reverse'">
-        <img
-            v-for="img in imgArray"
-            :key="img"
-            :src="img"
-        />
-    </Vue3Marquee>
 </template>
 
 <script setup>
@@ -38,7 +41,9 @@ const imgArray = [
 
 <style lang="scss" scoped>
 
-
+.main{
+    background: rgb(17, 64, 113);
+}
 
 :deep .vue3-marquee>.transparent-overlay{
     background: rgb(17, 64, 113);

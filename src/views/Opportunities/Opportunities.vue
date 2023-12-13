@@ -4,8 +4,9 @@
       Imkoniyatlar
     </h1>
 
-    <div class="grid grid-cols-12 justify-center justify-items-center   mt-12">
-      <div class="card md:col-span-6 col-span-12">
+    
+    <div class="flex justify-center gap-10 flex-col items-center md:flex-row   mt-12">
+      <div class="card w-[350px] h-[300px] md:w-[400px] md:h-[250px] p-ripple" v-ripple >
         <div class="card-inner">
           <div class="card-front">
             <div>
@@ -23,7 +24,7 @@
       </div>
 
 
-      <div class="card md:col-span-6 col-span-12 mt-8 md:mt-0">
+      <div class="card  w-[350px] h-[300px] md:w-[400px] md:h-[250px]  mt-8 md:mt-0">
         <div class="card-inner">
           <div class="card-front">
             <div>
@@ -46,6 +47,9 @@
 
 <script setup>
 import Fieldset from "primevue/fieldset";
+import { onMounted } from "vue";
+
+
 </script>
 
 <style scoped lang="scss">
@@ -60,8 +64,6 @@ import Fieldset from "primevue/fieldset";
 }
 
 .card {
-  width: 300px;
-  height: 200px;
   perspective: 1000px;
 }
 

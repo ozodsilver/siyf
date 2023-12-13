@@ -3,7 +3,9 @@ import Home from './views/Home/Home.vue';
 import AboutFond from './views/AboutFond/AboutFond.vue';
 import Opportunities from './views/Opportunities/Opportunities.vue';
 import Sponsors from './views/Sponsors/Sponsors.vue';
-import FooterComp from './views/Footer/FooterComp.vue';
+import Registration from './views/Register/Registration.vue';
+import Footer from './views/Footer/Footer.vue';
+import Faq from './views/FAQ/Faq.vue';
 </script>
 
 <template>
@@ -12,9 +14,11 @@ import FooterComp from './views/Footer/FooterComp.vue';
 <div class="absolute top-0 w-full">
   <Home></Home>
   <AboutFond></AboutFond>
-  <Sponsors></Sponsors>
   <Opportunities></Opportunities>
-<FooterComp></FooterComp>
+  <Registration></Registration>
+  <Sponsors></Sponsors>
+  <Faq></Faq>
+  <Footer></Footer>
 
 </div>
 

@@ -2,7 +2,7 @@
   <div>
     <nav class="glass">
       <div
-        class="max-w-screen-xl text-sm flex flex-wrap items-center justify-between mx-auto p-4"
+        class="max-w-screen-xl text-base font-sans flex flex-wrap items-center justify-between mx-auto p-4"
       >
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img
@@ -161,7 +161,7 @@ import Dropdown from 'primevue/dropdown';
 
 <style scoped>
 .glass{
-  background-color: rgba(1, 72, 107, 0.151);
+  background-color: rgba(25, 72, 95, 0.356);
     backdrop-filter: blur(4px) ;
     -webkit-backdrop-filter: blur(4px) ; 
 }
