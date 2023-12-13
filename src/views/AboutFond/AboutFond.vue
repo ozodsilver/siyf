@@ -84,7 +84,7 @@
 <script setup>
 import TabView from "primevue/tabview";
 import TabPanel from "primevue/tabpanel";
-import Card from "primevue/Card"
+import Card from "primevue/card"
 import Timeline from "primevue/timeline";
 import { ref } from "vue";
 import Button from 'primevue/button';
