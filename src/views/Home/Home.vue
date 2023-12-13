@@ -7,7 +7,7 @@
     <Carousel :autoplay="40000" :itemsToShow = '1' :wrap-around="true" >
       <Slide v-for="image in images" :key="image">
         <div class="carousel__item p-0 relative top-[-10px] "> 
-          <img :src="image.image_url" class="object-cover w-full brightness-75 h-[800px]" alt="">
+          <img :src="image.image_url" class="object-cover w-full brightness-75 h-[750px]" alt="">
       <div class="absolute hover:scale-110 hover:z-[99999] transition w-[350px] top-[160px] left-[100px] md:w-[400px] bg_description  p-5 md:p-10 rounded-lg  text-white font-bold  quicksand-700 ">
         <h1 class="text-start text-3xl uppercase first-letter:font-extrabold  first-letter:text-5xl first-letter:text-teal-500  "> {{ image.content[0].title }}</h1>
     <p class="text-xs md:text-base text-start relative mt-2  ">   {{ image.content[0].text }}</p>
@@ -54,26 +54,10 @@ import "vue3-carousel/dist/carousel.css";
 import Navigation from "../Navigation/Navigation.vue";
 
 
-
-// const images = [
-//     {
-//         image: 'https://w.forfun.com/fetch/1f/1f1ffcabbcce195aa0b1364a57bd8ad5.jpeg',
-//         header:'Lorem',
-//         description:'Lorem massage lorem messagegeggsdfdsfdsfsdfjslfsdfjdiosfjs dskfjdsklf jfjsdj fldsjf lsjf ksj ksj kfsjdk lfsdj lsjd fklsdj flksdj flksdj fksd jflksd jflskdj flsdkj flsdkj flksdjf isdpj sodif osidj fsodij fsdkjfsdoij fiosdjf osdj'
-//     },
-
-
-//     {
-//         image: 'https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg',
-//         header:'Lorem',
-//         description:'Lorem massage3434233'
-//     }
-// ]
-
 const images = [
     {
       "image_url" : "https://w.forfun.com/fetch/1f/1f1ffcabbcce195aa0b1364a57bd8ad5.jpeg",
-      "main_title" : "sucharation",  
+      "main_title" : "Eng yaxshi sarflangan mablag' bu ilmga sarflangan mablag'dir",  
       "content" : [
           {
             "title" : "HeaderNew1Lorem1", 
@@ -88,7 +72,7 @@ const images = [
     }, 
     {
       "image_url" : "https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg", 
-      "main_title" : "sucharation2", 
+      "main_title" : "ilm ilm", 
       "content" : [
           {
             "title" : "HeaderNew2Lorem3", 
