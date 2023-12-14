@@ -2,9 +2,9 @@
 import Home from './views/Home/Home.vue';
 import AboutFond from './views/AboutFond/AboutFond.vue';
 import Opportunities from './views/Opportunities/Opportunities.vue';
-import Sponsors from './views/Sponsors/Sponsors.vue';
 import Registration from './views/Register/Registration.vue';
 import Footer from './views/Footer/Footer.vue';
+import Sponsors from './views/Sponsors/Sponsors.vue';
 import Faq from './views/FAQ/Faq.vue';
 </script>
 
@@ -16,8 +16,8 @@ import Faq from './views/FAQ/Faq.vue';
   <AboutFond></AboutFond>
   <Opportunities></Opportunities>
   <Registration></Registration>
-  <Sponsors></Sponsors>
   <Faq></Faq>
+  <Sponsors></Sponsors>
   <Footer></Footer>
 
 </div>

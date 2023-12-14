@@ -177,4 +177,14 @@ const events = ref([
         }
     }
 }
+
+:deep .p-tabview .p-tabview-nav .p-tabview-ink-bar {
+    z-index: 1;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: white;
+    transition: 500ms cubic-bezier(0.35, 0, 0.25, 1);
+}
 </style>

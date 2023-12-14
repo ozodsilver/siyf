@@ -1,7 +1,7 @@
 <template>
-    <div class="faq_block md:px-[200px] px-5">
-        <h1 class="md:text-[50px] text-2xl text-white text-center ">Ko'p so'raladigan savollar</h1>
-        <div class="card py-10">
+    <div class="faq_block md:px-[10px] px-5 pt-20">
+        <h1 class="md:text-[50px] text-2xl text-white text-center font-semibold">Ko'p so'raladigan savollar</h1>
+        <div class="card py-14 md:px-10">
         <Accordion :activeIndex="0">
             <AccordionTab header="Header I">
                 <p class="m-0">
@@ -57,5 +57,17 @@ background: rgb(17, 64, 113);
 
 :deep .p-accordion-header{
 margin-top: 14px;
+}
+
+:deep .p-accordion .p-accordion-tab:first-child .p-accordion-header .p-accordion-header-link {
+    background: linear-gradient(90deg,#3477b0,rgba(30,83,130,0));
+   color: white;
+   border-radius: 12px;
+}
+
+:deep .p-accordion .p-accordion-tab:not(:first-child) .p-accordion-header .p-accordion-header-link {
+    background: linear-gradient(90deg,#3477b0,rgba(30,83,130,0));
+color: white;
+border-radius: 12px;
 }
 </style>

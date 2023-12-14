@@ -1,6 +1,11 @@
-<template>
-  <div class="Footer ">
-    <div class="Section_one pt-5">
+<template> 
+
+  <div class="Footer">
+    <h1 class="text-[30px] text-white font-bold text-start py-6 px-10 ">
+      Contac us
+    </h1>
+    <div class="Section_one ">
+       
       <ul>
         <li class="fw-bold py-3">Top Products</li>
         <li>Managed Website</li>
@@ -31,8 +36,8 @@
       </ul>
     </div>
     <div class="Section_two m-auto">
-      <p class="text-white text-center py-3">
-        Copyright ©2023 All rights reserved || website name
+      <p class="text-white text-start px-10 py-10">
+        Copyright ©2023 All rights reserved
       </p>
       <div class=" w-[100%] md:w-[40%] text-3xl  py-5 justify-around m-auto flex text-white fs-4">
         <i class="fa-solid fa-house"></i>
@@ -51,7 +56,7 @@
 
 .Footer {
   width: 100%;
-  height: 450px;
+
   background: linear-gradient(
     0deg,
     rgb(44, 51, 59) 100%,
@@ -162,4 +167,7 @@ ul :first-child {
     width: 60%;
   }
 }
+
+
+
 </style>

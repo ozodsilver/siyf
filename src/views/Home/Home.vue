@@ -100,25 +100,6 @@ const images = [
 </script>
 
 <style lang="scss" scoped>
-// .wrapper {
-//   position: relative;
-
-//  &:before{
-//   content: '';
-//   width: 100%;
-//   height: 100%;
-//   position: absolute;
-//   top: 0;
-//   background: rgb(17, 64, 113);
-//   background: linear-gradient(
-//     180deg,
-//     rgba(17, 64, 113, 0.7) 0%,
-//     rgba(52, 141, 230, 0.0503151260504207) 100%
-//   );
-
-//   z-index: 22;
-//  }
-// }
 
 .carousel__item {
   min-height: 200px;
