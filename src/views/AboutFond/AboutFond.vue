@@ -1,5 +1,6 @@
 
 <template>
+
   <div class="aboutfond">
     <div class="pt-6 px-5 bg-transparent">
       <TabView>
@@ -16,21 +17,19 @@
           </template>
 
           <template #default>
-            <div class="card mt-10 ">
-        <Timeline layout="vertical" :value="events" align="alternate" class="customized-timeline">
+            <div class="card mt-10 px-10  ">
+        <Timeline layout="vertical" :value="infos" align="alternate" class="customized-timeline">
             <template #marker="slotProps">
                 <span class="flex w-2rem h-3rem align-items-center justify-content-center text-white border-circle z-1 shadow-1">
-                    <i :class="slotProps.item.icon" class="text-2xl"></i>
+                    <i :class="slotProps.item.icon" class="text-3xl"></i>
                 </span>
             </template>
             <template #content="slotProps">
-                <Card class="mt-3">
+                <Card class="mt-3 p-ripple" v-ripple>
                     <template #title>
-                    <h1 class="text-white">  ddfdfd</h1>
+                    <h1 class="text-white">  {{ slotProps.item.header }}</h1>
                     </template>
-                    <template #subtitle>
-                        {{ slotProps.item }}
-                    </template>
+                
                     <template #content>
                         <img v-if="slotProps.item.image" :src="`https://primefaces.org/cdn/primevue/images/product/${slotProps.item.image}`" :alt="slotProps.item.name" width="200" class="shadow-1" />
                         <p>
@@ -91,11 +90,11 @@ import Button from 'primevue/button';
 
 
 
-const events = ref([
-    { status: 'Ordered', date: '15/10/2020 10:30', icon: 'fas fa-book', image: 'game-controller.jpg' },
-    { status: 'Processing', date: '15/10/2020 14:00', icon: 'fas fa-book-journal-whills',  },
-    { status: 'Shipped', date: '15/10/2020 16:15', icon: 'fas fa-book-open-reader',  },
-    { status: 'Delivered', date: '16/10/2020 10:00', icon: 'fas fa-cube' }
+const infos = ref([
+    { header: 'Sarlavha1', date: '15/10/2020 10:30', icon: 'fas fa-book',  },
+    { header: 'Sarlavha2', date: '15/10/2020 14:00', icon: 'fas fa-book-journal-whills',  },
+    { header: 'Sarlavha3', date: '15/10/2020 16:15', icon: 'fas fa-book-open-reader',  },
+    { header: 'Sarlavha4', date: '16/10/2020 10:00', icon: 'fas fa-cube' }
 ]);
 
 </script>
@@ -186,5 +185,18 @@ const events = ref([
     height: 2px;
     background-color: white;
     transition: 500ms cubic-bezier(0.35, 0, 0.25, 1);
+}
+
+ :deep .p-card .p-card-body {
+  background: radial-gradient(173.3% 173.3% at -8.44% -13.57%, rgb(93, 159, 217) 0%, rgb(43, 104, 158) 100%);
+  border-radius: 24px;
+}
+
+:deep .p-card {
+    background: transparent;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: white;
 }
 </style>

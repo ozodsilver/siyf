@@ -23,6 +23,11 @@
     background: rgb(17,64,113) !important;
 background: linear-gradient(0deg, rgba(17,64,113,0.804359243697479) 0%, rgba(52,141,230,0.5410539215686274) 100%) !important;
 font-family: 'Glory', sans-serif;
+
+  }
+
+  *{
+    scroll-behavior: smooth;
   }
 
   @import url('https://fonts.googleapis.com/css2?family=Glory:wght@500&display=swap');

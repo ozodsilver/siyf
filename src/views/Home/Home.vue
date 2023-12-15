@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-[700px] bg-black wrapper relative overflow-hidden">
+  <div class="min-h-[700px] bg-black wrapper relative overflow-hidden" id="home">
     <div class="fixed top-0 z-50 w-full">
       <Navigation></Navigation>
     </div>

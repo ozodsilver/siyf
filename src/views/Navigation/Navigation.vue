@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="glass">
+    <nav class="glass" >
       <div
         class="max-w-screen-xl text-base font-sans flex flex-wrap items-center justify-between mx-auto p-4"
       >
@@ -46,7 +46,7 @@
           >
             <li>
               <a
-                href="#"
+                href="#home"
                 class="block py-2 px-3 text-white  rounded md:bg-transparent  md:p-0   md:dark:bg-transparent"
                 aria-current="page"
                 >Bosh sahifa</a
@@ -88,31 +88,20 @@
                     <a
                       href="#"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >Dashboard</a
+                      >O'quvchilarga</a
                     >
                   </li>
-                  <li>
+                  <li class="">
+                    <i class="fas fa-graduation-cap"></i>
                     <a
                       href="#"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >Settings</a
+                      >Studentlarga</a
                     >
                   </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >Earnings</a
-                    >
-                  </li>
+              
                 </ul>
-                <div class="py-1">
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                    >Sign out</a
-                  >
-                </div>
+             
               </div>
             </li>
             <li>

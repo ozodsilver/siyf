@@ -6,18 +6,18 @@
         <img src="@/assets/images/pinpng.com-signup-png-5027094.png" alt="" />
       </div>
 
-      <form class="w-[350px] pt-16 p-1 rounded-xl">
+      <form class="w-[350px] pt-8 p-1 rounded-xl">
         <div class="mb-5">
           <label
             for="email"
             class="block mb-2 text-sm font-medium text-white dark:text-white"
-            >Your email</label
+            >Email</label
           >
           <input
             type="email"
             id="email"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="name@flowbite.com"
+            placeholder="siyf@gmail.com"
             required
           />
         </div>
@@ -25,14 +25,19 @@
           <label
             for="password"
             class="block mb-2 text-sm font-medium text-white dark:text-white"
-            >Your password</label
+            >Tel</label
           >
           <input
-            type="password"
+            type="tel"
             id="password"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             required
+            placeholder="+998 99 999 99 99"
           />
+
+          <div class="card flex justify-content-center">
+        <Textarea v-model="value" class="w-full rounded-lg mt-6 text-sm h-[130px]" placeholder="Sizni qiziqtirgan savolni qoldiring" />
+    </div>
         </div>
 
         <div class="flex items-center justify-end">
@@ -40,7 +45,7 @@
             type="submit"
             class="text-white w-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm mt-6 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
-            Submit
+            Jo'natish
           </button>
         </div>
       </form>
@@ -48,7 +53,12 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue';
+import Textarea from 'primevue/textarea';
+
+const value = ref('');
+</script>
 
 <style lang="scss" scoped>
 .form_block {
