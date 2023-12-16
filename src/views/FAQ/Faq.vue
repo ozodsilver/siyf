@@ -1,5 +1,5 @@
 <template>
-    <div class="faq_block md:px-[10px] px-5 pt-20">
+    <div class="faq_block md:px-[10px] px-5 pt-20" id="faq">
         <h1 class="md:text-[50px] text-2xl text-white text-center font-semibold">Ko'p so'raladigan savollar</h1>
         <div class="card py-14 md:px-10">
         <Accordion :activeIndex="0">

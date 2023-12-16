@@ -9,16 +9,16 @@
         <div class="carousel__item p-0 relative top-[-10px]">
           <img
             :src="image.image_url"
-            class="object-cover w-full brightness-75 h-[750px]"
+            class="object-cover w-full brightness-50 h-[750px]"
             alt=""
           />
 
 
           <div
-            class="absolute hover:scale-110 hover:z-[99999] transition w-[280px] md:top-[160px] md:left-[100px]  left-[30px] top-[140px] md:w-[400px] bg_description p-5 md:p-10 rounded-lg text-white font-bold quicksand-700 overflow-hidden"
+            class="absolute hover:scale-110 hover:z-[99999] transition w-[280px] md:top-[160px] md:left-[100px]  left-[30px] top-[200px] md:w-[400px] bg_description p-5 md:p-10 rounded-lg text-white font-bold quicksand-700 overflow-hidden"
           >
             <h1
-              class="text-start md:text-3xl uppercase first-letter:font-extrabold first-letter:text-5xl first-letter:text-red-500"
+              class="text-start md:text-3xl uppercase first-letter:font-extrabold first-letter:text-5xl first-letter:text-zinc-300"
             >
               {{ image.content[0].title }}
             </h1>
@@ -32,10 +32,10 @@
 
         <div class="p-0 top-[-20px]">
           <div
-            class="absolute hover:scale-110 transition w-[280px] md:left-[200px] md:top-[260px] top-[170px] left-[60px] md:w-[400px] bg_description p-5 md:p-10 rounded-lg text-white font-bold quicksand-700 overflow-hidden"
+            class="absolute hover:scale-110 transition w-[280px] md:left-[200px] md:top-[260px] top-[240px] left-[60px] md:w-[400px] bg_description p-5 md:p-10 rounded-lg text-white font-bold quicksand-700 overflow-hidden"
           >
             <h1
-              class="text-start md:text-3xl uppercase first-letter:font-extrabold first-letter:text-5xl first-letter:text-teal-500"
+              class="text-start md:text-3xl uppercase first-letter:font-extrabold first-letter:text-5xl first-letter:text-gray-200"
             >
               {{ image.content[1].title }}
             </h1>
@@ -46,7 +46,7 @@
         </div>
 
         <div
-          class="md:w-[400px] h-[400px] absolute md:right-[150px] flex items-center "
+          class="md:w-[400px] h-[400px] absolute top-[250px] md:top-[100px] md:right-[150px] flex items-center "
         >
           <h1 class="text-white font-semibold md:text-2xl px-5 md:px-0 md:text-justify text-center">
             {{ image.main_title }}

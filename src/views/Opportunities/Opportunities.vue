@@ -10,15 +10,13 @@
         <div class="card-inner">
           <div class="card-front">
             <div>
-                <img src="../../assets/images/pngwing.com.png" class="img-thumbnail w-2/4 block mx-auto" alt="...">
-            <h2 class="text-center text-white">Studentlarga</h2>
+                <img src="../../assets/images/learners.png" class="img-thumbnail w-[100px] h-[100px] object-cover block mx-auto" alt="...">
+            <h2 class="text-center mt-3 text-white">O'quvchilarga</h2>
             </div>
           </div>
           <div class="card-back text-xs overflow-hidden">
             
-            <p>
-             sdsds
-            </p>
+            <router-link to = '/Learners'> O'quvchilarga </router-link>
           </div>
         </div>
       </div>
@@ -28,8 +26,8 @@
         <div class="card-inner">
           <div class="card-front">
             <div>
-                <img src="../../assets/images/pngwing.com.png" class="img-thumbnail w-2/4 block mx-auto" alt="...">
-            <h2 class="text-center text-white">Studentlarga</h2>
+                <img src="../../assets/images/pngwing.com.png" class="img-thumbnail w-[100px] h-[100px] object-cover block mx-auto" alt="...">
+            <h2 class="text-center text-white mt-3">Studentlarga</h2>
             </div>
           </div>
           <div class="card-back text-xs overflow-hidden">

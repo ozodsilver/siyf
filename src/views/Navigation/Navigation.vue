@@ -45,12 +45,12 @@
             class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 text-white"
           >
             <li>
-              <a
+              <router-link
+              to="/"
                 href="#home"
                 class="block py-2 px-3 text-white  rounded md:bg-transparent  md:p-0   md:dark:bg-transparent"
                 aria-current="page"
-                >Bosh sahifa</a
-              >
+                >Bosh sahifa</router-link>
             </li>
             <li>
               <button
@@ -120,6 +120,13 @@
               >
             </li>
             <li>
+              <router-link
+                to = '/Managiment'
+                class="block py-2 px-3 rounded text-white md:hover:bg-transparent md:border-0  md:p-0  "
+                >Rahbariyat </router-link>
+            </li>
+
+            <li>
               <a
                 href="#"
                 class="block py-2 px-3 rounded md:hover:bg-transparent md:border-0  md:p-0 "
@@ -129,7 +136,7 @@
 
             <li>
               <a
-                href="#"
+                href="#faq"
                 class="block py-2 px-3 rounded md:hover:bg-transparent md:border-0  md:p-0 "
                 >FAQ</a
               >

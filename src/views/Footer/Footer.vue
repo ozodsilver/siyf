@@ -1,9 +1,7 @@
 <template> 
 
   <div class="Footer">
-    <h1 class="text-[30px] text-white font-bold text-start py-6 px-10 ">
-      Contac us
-    </h1>
+   
     <div class="Section_one ">
        
       <ul>
@@ -36,16 +34,18 @@
       </ul>
     </div>
     <div class="Section_two m-auto">
-      <p class="text-white text-start px-10 py-10">
-        Copyright ©2023 All rights reserved
-      </p>
-      <div class=" w-[100%] md:w-[40%] text-3xl  py-5 justify-around m-auto flex text-white fs-4">
+     
+      <div class=" w-[100%] md:w-[40%] text-3xl  py-5 pt-12 justify-around m-auto flex text-white fs-4">
         <i class="fa-solid fa-house"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-telegram"></i>
         <i class="fa-brands fa-youtube"></i>
       </div>
+
+      <p class="text-white text-center px-10 py-10">
+        Copyright ©2023 All rights reserved
+      </p>
     </div>
   </div>
 </template>

@@ -6,7 +6,7 @@
         <img src="@/assets/images/pinpng.com-signup-png-5027094.png" alt="" />
       </div>
 
-      <form class="w-[350px] pt-8 p-1 rounded-xl">
+      <form class="md:w-[350px] pt-8 p-1 rounded-xl">
         <div class="mb-5">
           <label
             for="email"
