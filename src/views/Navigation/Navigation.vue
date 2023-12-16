@@ -84,18 +84,19 @@
                   class="py-2 text-sm text-gray-700 dark:text-gray-400"
                   aria-labelledby="dropdownLargeButton"
                 >
-                  <li>
+                  <li class="hover:bg-gray-100 flex items-center px-2">
+                    <i class="fas fa-chalkboard-user"></i>
                     <a
-                      href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      href="#learner"
+                      class="block px-4 py-2  dark:hover:bg-gray-600 dark:hover:text-white"
                       >O'quvchilarga</a
                     >
                   </li>
-                  <li class="">
+                  <li class="flex items-center  px-2 hover:bg-gray-100">
                     <i class="fas fa-graduation-cap"></i>
                     <a
-                      href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      href="#student"
+                      class="block  px-2 py-2  dark:hover:bg-gray-600 dark:hover:text-white"
                       >Studentlarga</a
                     >
                   </li>

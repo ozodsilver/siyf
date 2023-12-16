@@ -1,5 +1,5 @@
 <template>
-  <div class="opportunities">
+  <div class="opportunities" id="learner">
     <h1 class="text-[50px] text-center text-white pt-10 font-bold">
       Imkoniyatlar
     </h1>
