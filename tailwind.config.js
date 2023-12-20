@@ -34,9 +34,11 @@ export default {
         'terminal-text': '#110D6D',
         'terminal-bg': '#E0E6FC',
         'transit-bg': '#FFF1F5'
-
-
       },
+      
+      backgroundImage: {
+        'children': "url('./imgaes/childeren.png')",
+      }
 
     },
   },

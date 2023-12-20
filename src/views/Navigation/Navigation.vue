@@ -20,7 +20,7 @@
           type="button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-controls="navbar-dropdown"
-          aria-expanded="ture"
+          aria-expanded="false"
         >
           <span class="sr-only">Open main menu</span>
           <svg

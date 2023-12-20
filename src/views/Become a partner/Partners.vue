@@ -3,14 +3,14 @@
     <Navigation1></Navigation1>
   </div>
   <div
-    class="section lg:flex justify-evenly w-full h-[55rem] md:py-10 py-14 lg:gap-0 gap-10"
+    class="section lg:flex justify-evenly w-full h-[55rem] md:py-0 py-14 "
   >
     <!--  -->
     <div class="lg:w-2/5 w-full">
       <img
         src="../../../imgaes//Become a partner.png"
         alt="Loading"
-        class="lg:w-11/12 m-auto"
+        class="lg:w-11/12 w-[85%] m-auto md:mt-16 mt-1"
       />
     </div>
     <div class="text-card lg:w-2/5 w-full md:px-0 px-6 lg:h-full h-[75%]">

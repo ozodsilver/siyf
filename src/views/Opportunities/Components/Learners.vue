@@ -7,7 +7,9 @@
     <h1 class="text-white pb-12 sm:text-3xl text-2xl text-center font-semibold">
       Ishtirok etish shartlari
     </h1>
-    <div class="w-4/5 h-full m-auto lg:grid grid-cols-12 grid-rows-2 gap-8">
+    <div
+      class="lg:w-4/5 w-11/12 h-full m-auto lg:grid grid-cols-12 grid-rows-2 gap-8"
+    >
       <div class="kard1 rounded-2xl col-span-3 lg:mb-0 mb-8">
         <h1 class="text-white text-xl font-semibold font-sans px-7 pt-10">
           Arizalar soni
@@ -19,16 +21,21 @@
           vitae praesentium itaque.
         </p>
       </div>
-      <div class="kard1 rounded-2xl col-span-3 row-span-2 lg:mb-0 mb-8">
+      <div class="bg-none kard1 rounded-2xl col-span-3 row-span-2 lg:mb-0 mb-8">
         <h1 class="text-white text-xl font-semibold font-sans px-7 pt-10">
           Arizalar soni
         </h1>
         <p class="text-white font-sans py-4 px-7 text-left">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+          Lorem ipsum, sdolor sit amet consectetur adipisicing elit. Quaerat
           dicta quae pariatur. Cum debitis asperiores itaque recusandae
           similique explicabo, quod quis! Amet, distinctio culpa quia libero aut
           vitae praesentium itaque.
         </p>
+        <img
+          src="https://awards.gov.uz/img/tp_item.yFull.png"
+          alt="img"
+          class="xl:block hidden ps-32"
+        />
       </div>
       <div class="kard2 rounded-2xl col-span-3 lg:mb-0 mb-8">
         <h1 class="text-white text-xl font-semibold font-sans px-7 pt-10">

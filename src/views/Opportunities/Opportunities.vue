@@ -4,41 +4,49 @@
       Imkoniyatlar
     </h1>
 
-    
-    <div class="flex justify-center gap-10 flex-col items-center md:flex-row   mt-12">
-      <div class="card w-[350px] h-[300px] md:w-[400px] md:h-[250px] p-ripple" v-ripple >
+    <div
+      class="flex justify-center gap-10 flex-col items-center md:flex-row mt-12"
+    >
+      <div
+        class="card w-[350px] h-[300px] md:w-[400px] md:h-[250px] p-ripple"
+        v-ripple
+      >
         <div class="card-inner">
           <div class="card-front">
             <div>
-                <img src="../../assets/images/learners.png" class="img-thumbnail w-[100px] h-[100px] object-cover block mx-auto" alt="...">
-            <h2 class="text-center mt-3 text-white">O'quvchilarga</h2>
+              <img
+                src="../../assets/images/learners.png"
+                class="img-thumbnail w-[100px] h-[100px] object-cover block mx-auto"
+                alt="..."
+              />
+              <h2 class="text-center mt-3 text-white">O'quvchilarga</h2>
             </div>
           </div>
           <div class="card-back text-xs overflow-hidden">
-            
-            <router-link to = '/Learners'> O'quvchilarga </router-link>
+            <router-link to="/Learners"> O'quvchilarga </router-link>
           </div>
         </div>
       </div>
 
-
-      <div class="card  w-[350px] h-[300px] md:w-[400px] md:h-[250px]  mt-8 md:mt-0">
+      <div
+        class="card w-[350px] h-[300px] md:w-[400px] md:h-[250px] mt-8 md:mt-0"
+      >
         <div class="card-inner">
           <div class="card-front">
             <div>
-                <img src="../../assets/images/pngwing.com.png" class="img-thumbnail w-[100px] h-[100px] object-cover block mx-auto" alt="...">
-            <h2 class="text-center text-white mt-3">Studentlarga</h2>
+              <img
+                src="../../assets/images/pngwing.com.png"
+                class="img-thumbnail w-[100px] h-[100px] object-cover block mx-auto"
+                alt="..."
+              />
+              <h2 class="text-center text-white mt-3">Studentlarga</h2>
             </div>
           </div>
           <div class="card-back text-xs overflow-hidden">
-            
-            <p>
-             
-            </p>
+            <router-link to="/Students"> Studentlarga </router-link>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -46,8 +54,6 @@
 <script setup>
 import Fieldset from "primevue/fieldset";
 import { onMounted } from "vue";
-
-
 </script>
 
 <style scoped lang="scss">
@@ -100,11 +106,11 @@ import { onMounted } from "vue";
 }
 
 .card-back {
-background: red;
-backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    background-color: rgba(188, 192, 197, 0.32);
-    border-radius: 12px;
+  background: red;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background-color: rgba(188, 192, 197, 0.32);
+  border-radius: 12px;
   color: #fff;
   display: flex;
   align-items: center;

@@ -1,42 +1,30 @@
-import './assets/main.css'
+import "./assets/main.css";
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import { createApp } from "vue";
+import { createPinia } from "pinia";
 
+import App from "./App.vue";
+import router from "./router";
+import i18n from "./Languages/index.js";
 
+import PrimeVue from "primevue/config";
+import "primevue/resources/themes/mdc-light-deeppurple/theme.css";
 
-import App from './App.vue'
-import router from './router'
-import i18n from './Languages/index.js'
+import Ripple from "primevue/ripple";
 
-// import 'primeicons/primeicons.css'
+import Vue3Marquee from "vue3-marquee";
 
+import FocusTrap from "primevue/focustrap";
 
-import PrimeVue from 'primevue/config';
-import 'primevue/resources/themes/mdc-light-deeppurple/theme.css'
+const app = createApp(App);
 
+app.directive("focustrap", FocusTrap);
+app.directive("ripple", Ripple);
 
-import Ripple from 'primevue/ripple';
-
-import Vue3Marquee from 'vue3-marquee'
-
-
-import FocusTrap from 'primevue/focustrap';
-
-
-
-const app = createApp(App)
-
-
-app.directive('focustrap', FocusTrap);
-app.directive('ripple', Ripple);
-
-
-
-app.use(createPinia())
-app.use(i18n)
-app.use(Vue3Marquee)
+app.use(createPinia());
+app.use(i18n);
+app.use(Vue3Marquee);
 app.use(PrimeVue, { ripple: true });
-app.use(router)
+app.use(router);
 
-app.mount('#app')
+app.mount("#app");
