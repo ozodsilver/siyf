@@ -49,11 +49,6 @@ import Footer from "../Footer/Footer.vue";
   );
 }
 
-.bg-img {
-  background-image: url(https://quixy.com/wp-content/uploads/elementor/thumbs/Business-Partner-ozus1w4182arjskivwvejhido35dft5u3gmgi4rbpc.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
 @media (min-width: 768px) {
   .text-card {
     background: linear-gradient(
