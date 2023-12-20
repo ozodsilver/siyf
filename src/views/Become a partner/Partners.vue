@@ -10,7 +10,7 @@
       <img
         src="../../../imgaes//Become a partner.png"
         alt="Loading"
-        class="lg:w-full m-auto"
+        class="lg:w-11/12 m-auto"
       />
     </div>
     <div class="text-card lg:w-2/5 w-full md:px-0 px-6 lg:h-full h-[75%]">
