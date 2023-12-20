@@ -2,20 +2,24 @@
   <div>
     <Navigation1></Navigation1>
   </div>
-  <div class="section lg:flex justify-evenly w-full h-[55rem] md:py-10 py-14">
+  <div
+    class="section lg:flex justify-evenly w-full h-[55rem] md:py-10 py-14 lg:gap-0 gap-10"
+  >
     <!--  -->
-    <div
-      class="bg-img md:w-2/5 w-[85%] m-auto md:h-full sm:h-4/5 h-2/4 md:pt-0"
-    ></div>
-    <div
-      class="text-card md:w-2/5 w-[100%] md:px-0 px-6 m-auto md:h-full h-2/4 mt-10"
-    >
+    <div class="lg:w-2/5 w-full">
+      <img
+        src="../../../imgaes//Become a partner.png"
+        alt="Loading"
+        class="lg:w-full m-auto"
+      />
+    </div>
+    <div class="text-card lg:w-2/5 w-full md:px-0 px-6 lg:h-full h-[75%]">
       <p
-        class="text-white font-semibold font-sans md:text-7xl text-3xl md:pt-36 md:text-left text-center"
+        class="text-white font-semibold font-sans lg:text-7xl text-3xl lg:pt-36 lg:text-left text-center"
       >
         BUSINESS PARTNERSHIP
       </p>
-      <P class="text-white font-sans py-5 md:text-left text-center"
+      <P class="text-white font-sans py-5 lg:text-left text-center"
         >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet
         quasi provident neque, tempora molestiae aut rerum necessitatibus
         consequuntur. Vel quidem veritatis facere officiis inventore tenetur
