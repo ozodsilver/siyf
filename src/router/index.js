@@ -46,14 +46,14 @@ const router = createRouter({
       component: () => import("../views/Dashboard/Admin.vue"),
       children: [
         {
-          path: "/addEmployee",
+          path: "",
           name: "employee",
           component: addEmployee,
         },
         {
-          path: "/addNews",
+          path: "/admin/add-news",
           name: "addNews",
-          component: addNews,
+          component: addNews
         },
       ],
     },

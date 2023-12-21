@@ -126,16 +126,16 @@ import { ref } from "vue";
 import Button from "primevue/button";
 
 const infos = ref([
-  { header: "Sarlavha1", date: "15/10/2020 10:30", icon: "fas fa-book" },
+  { header: "Sarlavha1", date: "15/10/2020 10:30", icon: "fas fa-cube" },
   {
     header: "Sarlavha2",
     date: "15/10/2020 14:00",
-    icon: "fas fa-book-journal-whills",
+    icon: "fas fa-cube" ,
   },
   {
     header: "Sarlavha3",
     date: "15/10/2020 16:15",
-    icon: "fas fa-book-open-reader",
+    icon: "fas fa-cube" ,
   },
   { header: "Sarlavha4", date: "16/10/2020 10:00", icon: "fas fa-cube" },
 ]);
@@ -148,17 +148,17 @@ const infos2 = ref([
   {
     header: "Maqsad va vazifalar2",
     date: "15/10/2020 14:00",
-    icon: "fa fa-retweet",
+    icon: "fa fa-line-chart",
   },
   {
     header: "Maqsad va vazifalar3",
     date: "15/10/2020 16:15",
-    icon: "fa fa-tasks",
+    icon: "fa fa-line-chart",
   },
   {
     header: "Maqsad va vazifalar4",
     date: "16/10/2020 10:00",
-    icon: " fa fa-sitemap",
+    icon: "fa fa-line-chart",
   },
 ]);
 </script>

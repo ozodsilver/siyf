@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Xodim</h1>
+    <h1 class="bg-red-300">Xodim</h1>
   </div>
 </template>
 
