@@ -143,22 +143,22 @@ const infos2 = ref([
   {
     header: "Maqsad va vazifalar1",
     date: "15/10/2020 10:30",
-    icon: "pi pi-verified",
+    icon: "fa fa-line-chart",
   },
   {
     header: "Maqsad va vazifalar2",
     date: "15/10/2020 14:00",
-    icon: "pi pi-slack",
+    icon: "fa fa-retweet",
   },
   {
     header: "Maqsad va vazifalar3",
     date: "15/10/2020 16:15",
-    icon: "pi pi-server",
+    icon: "fa fa-tasks",
   },
   {
     header: "Maqsad va vazifalar4",
     date: "16/10/2020 10:00",
-    icon: " pi pi-sitemap",
+    icon: " fa fa-sitemap",
   },
 ]);
 </script>

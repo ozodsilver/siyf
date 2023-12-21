@@ -4,8 +4,8 @@
     </div>
     <!--  -->
     <div class="section w-full h-full py-16">
-      <h1 class="text-white pb-12 sm:text-3xl text-2xl text-center font-semibold">
-Student
+      <h1 class="text-white pb-12 sm:text-4xl text-2xl text-center font-semibold">
+Studentlar
     </h1>
       <div
         class="lg:w-4/5 w-11/12 h-full m-auto lg:grid grid-cols-12 grid-rows-2 gap-8"

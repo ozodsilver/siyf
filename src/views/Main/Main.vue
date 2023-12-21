@@ -2,6 +2,8 @@
   <div>
     <Home></Home>
     <AboutFond></AboutFond>
+    <News></News>
+
     <Opportunities></Opportunities>
     <Registration></Registration>
     <Faq></Faq>
@@ -18,6 +20,7 @@ import Registration from "../Register/Registration.vue";
 import Footer from "../Footer/Footer.vue";
 import Sponsors from "../Sponsors/Sponsors.vue";
 import Faq from "../FAQ/Faq.vue";
+import News from '../News/News.vue'
 </script>
 
 <style lang="scss" scoped></style>
