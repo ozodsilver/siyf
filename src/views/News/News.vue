@@ -9,15 +9,20 @@
       :autoplayInterval="3000"
     >
       <template #item="slotProps">
-        <div
-          class="border-1 surface-border border-round m-2 text-center py-5 px-3 lg:h-[24rem] h-[18rem] hover:cursor-pointer"
-        >
-          <img
-            :src="slotProps.data.image"
-            alt="image"
-            class="w-full h-full rounded-2xl"
-          />
-        </div>
+        <router-link :to="{ name: 'news', params: { id: slotProps.data.id } }">
+          <div
+            class="border-1 surface-border border-round m-2 text-center py-5 px-3 lg:h-[24rem] h-[18rem] hover:cursor-pointe"
+          >
+            <img
+              :src="slotProps.data.image"
+              alt="image"
+              class="image w-full h-full rounded-2xl"
+            />
+            <p class="absolute w-full bottom-16 text-white">
+              {{ slotProps.data.title }}
+            </p>
+          </div>
+        </router-link>
       </template>
     </Carousel>
   </div>
@@ -122,7 +127,7 @@ const responsiveOptions = ref([
 <style lang="scss" scoped>
 .card {
   background: rgb(17, 64, 113);
-  background: linear-gradient(  
+  background: linear-gradient(
     0deg,
     rgba(17, 64, 113, 1) 100%,
     rgba(52, 141, 230, 0.9472163865546218) 100%
@@ -146,5 +151,8 @@ const responsiveOptions = ref([
 }
 :deep .p-carousel-prev {
   display: none;
+}
+:deep .image:hover {
+  opacity: 10;
 }
 </style>

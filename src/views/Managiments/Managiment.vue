@@ -4,12 +4,12 @@
   </div>
   <div class="card w-full xl:grid grid-cols-12 md:gap-2 gap-5 lg:py-32 pt-10">
     <div
-      class="kard md:flex justify-center md:w-[700px] w-[100%] md:rounded-3xl md:h-[15rem] h-[20rem] md:col-span-9 col-span-1 md:my-2 xl:mx-80 mx-auto my-6"
+      class="kard md:flex justify-center md:w-[700px] w-[100%] md:rounded-3xl md:h-[15rem] h-[20rem] md:col-span-4 col-span-1 md:my-2 xl:mx-80 mxq my-6"
       v-for="(item, index) of Managiments"
       :class="[
         index % 2 == 0
-          ? 'col-span-3 md:col-end-10 col-end-1'
-          : 'col-span-8 md:col-start-5  ',
+          ? 'col-span-3 md:col-end-5 col-end-1'
+          : 'col-span-8 md:col-start-3  ',
       ]"
     >
       <Image
