@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navigation></Navigation>
+    <Navigation class="bg-black"></Navigation>
   </div>
   <!--  -->
   <div class="section w-full h-full py-16">
