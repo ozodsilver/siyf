@@ -179,16 +179,6 @@ button:hover {
   transform: scale(0.6);
 }
 
-// #chk:checked ~ .login {
-// transform: translateY(-500px);
-// }
-// #chk:checked ~ .login label {
-//   transform: scale(1);
-// }
-// #chk:checked ~ .signup label {
-//   transform: scale(0.6);
-// }
-
 .animation {
   background: linear-gradient(
     -90deg,
