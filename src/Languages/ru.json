@@ -1,19 +1,10 @@
 {
-    "Authorization": {
-      "title": "Log in",
-      "description": "Fill in your login information",
-      "login": "Login",
-      "hasAlready": " Dear user This account is already in use by another employee",
-      "userNotFound": "No user found with this name",
-      "password": "Password",
-      "language": "Language",
-      "buttonText": "Access"
-    },
-  
-    "qrCodeDescription": {
-      "description": "Scan the QR code in the Authenticator app and enter the received verification code",
-      "code": "Enter a code",
-      "accessCode": "confirmation code",
-      "accessButton": "confirm"
-    }
+  "Navigation":{
+    "home": "Главная страница",
+    "opportune":"Imkoniyatlar",
+    "partners":"Hamkor va do'stlar",
+    "managiment":"Rahbariyat",
+    "contacts":"Biz bilan aloqa"
+    
   }
+}

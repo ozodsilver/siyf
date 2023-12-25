@@ -12,7 +12,7 @@ const languages = {
 
 const i18n = createI18n({
   legacy: false,
-  locale: 'ru',
+  locale: 'uz',
   fallbackLocale: 'uz',
   messages: languages
 })

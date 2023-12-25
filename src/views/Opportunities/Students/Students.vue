@@ -1,6 +1,6 @@
 <template>
     <div>
-      <Navigation></Navigation>
+      <Navigation class="bg-black"></Navigation>
     </div>
     <!--  -->
     <div class="section w-full h-full py-16">
@@ -86,7 +86,7 @@ Studentlar
   
     <!--  -->
     <div>
-      <faq></faq>
+      <Faq></Faq>
     </div>
     <div>
       <Footer></Footer>
@@ -96,7 +96,7 @@ Studentlar
   <script setup>
   import Navigation from "../../Navigation/Navigation.vue";
   import Footer from "../../Footer/Footer.vue";
-  import faq from "../Components/Faq.vue";
+  import Faq from "../Components/Faq.vue";
   </script>
   
   <style lang="scss" scoped>

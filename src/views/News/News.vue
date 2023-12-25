@@ -1,28 +1,26 @@
 <template>
-  <div class="card lg:py-10 py-5">
+  <div class="card lg:py-10 py-5 px-4">
+    <h1 class="text-[40px] font-bold text-white text-start pl-6">
+      Yangiliklar
+    </h1>
     <Carousel
       :value="products"
       :numVisible="3"
       :numScroll="1"
       :responsiveOptions="responsiveOptions"
       circular
-      :autoplayInterval="3000"
+      :autoplayInterval="5000"
     >
       <template #item="slotProps">
-        <router-link :to="{ name: 'news', params: { id: slotProps.data.id } }">
-          <div
-            class="border-1 surface-border border-round m-2 text-center py-5 px-3 lg:h-[24rem] h-[18rem] hover:cursor-pointe"
-          >
-            <img
-              :src="slotProps.data.image"
-              alt="image"
-              class="image w-full h-full rounded-2xl"
-            />
-            <p class="absolute w-full bottom-16 text-white">
-              {{ slotProps.data.title }}
-            </p>
-          </div>
-        </router-link>
+        <div
+          class="border-1 surface-border border-round m-2 text-center py-5 px-3 lg:h-[24rem] h-[18rem] hover:cursor-pointer"
+        >
+          <img
+            :src="slotProps.data.image"
+            alt="image"
+            class="w-full h-full rounded-2xl"
+          />
+        </div>АА
       </template>
     </Carousel>
   </div>
@@ -38,60 +36,22 @@ onMounted(() => {
     {
       id: 1,
       image: "https://sinaps.uz/wp-content/uploads/2023/06/3-vov-119.webp",
-      title:
-        "1lorem mauris con dictum dolor, consectetur adipiscing elit in el",
+      title: "title1",
+      description: "decription",
     },
     {
       id: 2,
       image: "https://sinaps.uz/wp-content/uploads/2023/06/3-vov-119.webp",
-      title:
-        "2lorem mauris con dictum dolor, consectetur adipiscing elit in el",
+      title: "title2",
+      description: "decription",
     },
-    {
-      id: 3,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYFi-JxJOLvuZzKZbn7tgIbDwMp3FXOH5Clg&usqp=CAU",
-      title:
-        "3lorem mauris con dictum dolor, consectetur adipiscing elit in el",
-    },
-    {
-      id: 4,
-      image: "https://sinaps.uz/wp-content/uploads/2023/06/3-vov-119.webp",
-      title:
-        "4lorem mauris con dictum dolor, consectetur adipiscing elit in el",
-    },
-    {
-      id: 5,
-      image: "https://sinaps.uz/wp-content/uploads/2023/06/3-vov-119.webp",
-      title:
-        "5lorem mauris con dictum dolor, consectetur adipiscing elit in el",
-    },
-    {
-      id: 6,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPkUB0AapD6b1rZMQrXgkDLcPEZt5Ik9S21w&usqp=CAU",
-      title:
-        "6lorem mauris con dictum dolor, consectetur adipiscing elit in el",
-    },
-    {
-      id: 7,
-      image: "https://sinaps.uz/wp-content/uploads/2023/06/3-vov-119.webp",
-      title:
-        "7lorem mauris con dictum dolor, consectetur adipiscing elit in el",
-    },
-    {
-      id: 8,
-      image:
-        "https://cdn.pixabay.com/photo/2018/09/09/02/25/kzkulesi-3663817_1280.jpg",
-      title:
-        "8lorem mauris con dictum dolor, consectetur adipiscing elit in el",
-    },
+
     {
       id: 9,
       image:
         "https://blog.obilet.com/wp-content/uploads/2023/07/0anagorsel-1-1024x683.jpeg",
-      title:
-        "9lorem mauris con dictum dolor, consectetur adipiscing elit in el",
+      title: "titl3",
+      description: "decription",
     },
   ];
 
@@ -103,7 +63,7 @@ const products = ref();
 const responsiveOptions = ref([
   {
     breakpoint: "1400px",
-    numVisible: 2,
+    numVisible: 3,
     numScroll: 1,
   },
   {
@@ -126,6 +86,7 @@ const responsiveOptions = ref([
 
 <style lang="scss" scoped>
 .card {
+  position: relative;
   background: rgb(17, 64, 113);
   background: linear-gradient(
     0deg,
@@ -133,6 +94,19 @@ const responsiveOptions = ref([
     rgba(52, 141, 230, 0.9472163865546218) 100%
   );
 }
+
+// :deep(img) {
+//   position: relative;
+//   &::before{
+// content: '';
+// width: 100%;
+// height: 100%;
+// position: absolute;
+// top: 0;
+// background:rgba(0,0,0,0.4);
+//   }
+// }
+
 :deep .p-link {
   border-radius: 50px;
   background: rgb(135, 185, 238);
@@ -151,8 +125,5 @@ const responsiveOptions = ref([
 }
 :deep .p-carousel-prev {
   display: none;
-}
-:deep .image:hover {
-  opacity: 10;
 }
 </style>

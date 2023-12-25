@@ -1,15 +1,17 @@
 <template>
   <div>
-    <Navigation></Navigation>
+    <Navigation class="bg-black"></Navigation>
   </div>
-  <div class="card w-full xl:grid grid-cols-12 md:gap-2 gap-5 lg:py-32 pt-10">
+  <h1 class="md:text-[50px] font-semibold text-white text-end md:pr-10 bg-[#114071] pl-4 py-8">Rahbariyat</h1>
+ 
+  <div class="card w-full xl:grid grid-cols-12 md:gap-2 gap-5  pt-10">
     <div
-      class="kard md:flex justify-center md:w-[700px] w-[100%] md:rounded-3xl md:h-[15rem] h-[20rem] md:col-span-4 col-span-1 md:my-2 xl:mx-80 mxq my-6"
+      class="kard md:flex justify-center md:w-[700px] w-[100%] md:rounded-3xl md:h-[15rem] h-[20rem] md:col-span-9 col-span-1 md:my-2 xl:mx-80 mx-auto my-6"
       v-for="(item, index) of Managiments"
       :class="[
         index % 2 == 0
-          ? 'col-span-3 md:col-end-5 col-end-1'
-          : 'col-span-8 md:col-start-3  ',
+          ? 'col-span-3 md:col-end-10 col-end-1'
+          : 'col-span-8 md:col-start-5  ',
       ]"
     >
       <Image
@@ -20,7 +22,7 @@
         class="md:h-full h-[55%] mr-3 w-full flex justify-center"
       />
       <div>
-        <p class="text-white text-center font-bold md:py-4 py-2 font-sans">
+        <p class="text-white md:text-[30px] text-end md:px-5 font-bold md:py-4 py-2 font-sans">
           {{ item.name }}
         </p>
 
@@ -76,7 +78,7 @@ const Managiments = [
 
 <style lang="scss" scoped>
 .card {
-  background: rgb(17, 64, 113);
+  background: #114071;
   background: linear-gradient(
     0deg,
     rgba(17, 64, 113, 1) 100%,
@@ -104,7 +106,7 @@ const Managiments = [
 }
 @media (min-width: 768px) {
   :deep img {
-    border-radius: 24px !important;
+    border-radius: 8px !important;
     border-top-right-radius: 0% !important ;
     border-bottom-right-radius: 0% !important;
     width: 100%;

@@ -26,6 +26,12 @@ const router = createRouter({
     },
 
     {
+      path: "/News/:id",
+      name: "inside_news",
+      component: () => import("../views/News/InsideNews.vue"),
+    },
+
+    {
       path: "/Learners",
       name: "learners",
       component: () => import("../views/Opportunities/Components/Learners.vue"),
@@ -51,14 +57,14 @@ const router = createRouter({
       component: () => import("../views/Dashboard/Admin.vue"),
       children: [
         {
-          path: "/addEmployee",
+          path: "",
           name: "employee",
           component: addEmployee,
         },
         {
-          path: "/addNews",
+          path: "/admin/add-news",
           name: "addNews",
-          component: addNews,
+          component: addNews
         },
       ],
     },

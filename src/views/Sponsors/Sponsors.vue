@@ -1,7 +1,7 @@
 <template>
 
-<div class="main pt-2">
-    <h1 class="text-white bg-transparent md:text-[50px] text-[10px] font-sans text-center  font-bold">Homiylar</h1>
+<div class="main pt-20 pb-2 ">
+    <h1 class="text-white pb-10 bg-transparent md:text-[50px] text-[10px] font-sans text-center  font-bold">Homiylar</h1>
     <Vue3Marquee :clone="true" :duration="5" :direction="'reverse'" >
             <img
                 v-for="img in imgArray"

@@ -1,6 +1,7 @@
 <template>
-  <div class="opportunities" id="learner">
-    <h1 class="text-[50px] text-center text-white pt-10 font-bold">
+
+  <div class="opportunities" >
+    <h1 class="text-[50px] text-center text-white pt-10 font-bold" id="opportunites">
       Imkoniyatlar
     </h1>
 
