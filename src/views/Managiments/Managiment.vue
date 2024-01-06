@@ -3,7 +3,7 @@
     <Navigation class="bg-black"></Navigation>
   </div>
   <h1 class="md:text-[50px] font-semibold text-white text-end md:pr-10 bg-[#114071] pl-4 py-8">Rahbariyat</h1>
- 
+
   <div class="card w-full xl:grid grid-cols-12 md:gap-2 gap-5  pt-10">
     <div
       class="kard   md:flex justify-center md:w-[700px] w-[100%] md:rounded-xl md:h-[15rem] h-[20rem] md:col-span-9 col-span-1 md:my-10 mx-auto "
@@ -15,19 +15,18 @@
       ]"
     >
       <Image
-        :src="item.img"
+        :src="`https://siyfprojectapi.pythonanywhere.com/${item.image}`"
         alt="Image"
-        width="400"
         preview
-        class="md:h-full h-[55%] mr-3 w-full flex justify-center"
+        class="md:h-full max-w-[300px] h-[55%] mr-3 w-full flex justify-center object-cover"
       />
       <div>
-        <p class="text-white md:text-[30px] text-end md:px-5 font-bold md:py-4 py-2 font-sans">
-          {{ item.name }}
+        <p class="text-white md:text-[30px] text-center  md:px-5 font-bold md:py-4 py-2 font-sans">
+          {{ item.fullname }}
         </p>
 
         <p class="text-white text-center font-sans sm:text-sm text-xs px-0.5">
-          {{ item.title }}
+          {{ item.description }}
         </p>
       </div>
     </div>
@@ -43,37 +42,22 @@ import Image from "primevue/image";
 
 import Navigation from "../Navigation/Navigation.vue";
 import Footer from "../Footer/Footer.vue";
+import {onMounted, ref} from 'vue'
+import axios from "axios";
 
-const Managiments = [
-  {
-    id: 1,
-    img: "https://primefaces.org/cdn/primevue/images/galleria/galleria10.jpg",
-    title:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, labore suscipit debitis culpa ducimus pariatur necessitatibus amet odit unde aut.",
-    name: "John Buff1",
-  },
-  {
-    id: 2,
-    img: "https://primefaces.org/cdn/primevue/images/galleria/galleria10.jpg",
-    title:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, bore suscipit debitis culpa ducimus pariatur necessitatibus amet odit unde aut.",
-    name: "John Buff2",
-  },
-  {
-    id: 3,
-    img: "https://primefaces.org/cdn/primevue/images/galleria/galleria10.jpg",
-    title:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquam id! Facilis hic  ducimus pariatur necessitatibus amet odit unde aut.",
-    name: "John Buff3",
-  },
-  {
-    id: 4,
-    img: "https://primefaces.org/cdn/primevue/images/galleria/galleria10.jpg",
-    title:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquacidunt, similique, labore suscipit debitis culpa ducimus pariatur necessitatibus amet odit unde aut.",
-    name: "John Buff4",
-  },
-];
+const Managiments = ref([])
+
+onMounted(()=>{
+
+  axios.get('https://siyfprojectapi.pythonanywhere.com/api/uz/employee/list/').then(res =>{
+if(res.status == 200){
+  res.data.forEach(el =>{
+    Managiments.value.push(el)
+  })
+}
+  })
+
+})
 </script>
 
 <style lang="scss" scoped>

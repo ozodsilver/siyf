@@ -2,9 +2,9 @@
 
 
   <div class="card lg:py-10 py-5 px-4 ">
-    <h1 class="text-[40px] font-bold text-white  text-start pl-6">Yangiliklar</h1>
+    <h1 class="text-[50px] font-bold text-white  text-start pl-6">Yangiliklar</h1>
     <Carousel
-      :value="products"
+      :value="news"
       :numVisible="3"
       :numScroll="1"
       :responsiveOptions="responsiveOptions"
@@ -16,14 +16,14 @@
           class="border-1  relative  surface-border border-round mx-4 text-center py-5   hover:cursor-pointer"
         >
           <img
-            :src="slotProps.data.image"
+            :src="'https://siyfprojectapi.pythonanywhere.com' + slotProps.data.image"
             alt="image"
-            class="w-full brightness-90 h-[230px] object-cover rounded-2xl"
+            class="w-[400px] brightness-90 h-[300px] object-cover rounded-2xl"
           />
 
-          <div class="  w-full left-10  max-h-[200px] mx-auto mt-3  overflow-hidden rounded-xl">
+          <div class="  w-full left-10  max-h-[300px] mx-auto mt-3  overflow-hidden rounded-xl">
             <p class="text-white underline ">
-              <router-link :to="{name:'inside_news', params:{id:slotProps.data.id}}">{{ slotProps.data.title }}</router-link>
+              <router-link :to="{name:'inside_news', params:{id:slotProps.data.id}}">{{ slotProps.data.text }}</router-link>
             </p>
           </div>
 
@@ -35,38 +35,21 @@
 
 <script setup>
 import Carousel from "primevue/carousel";
+import axios from 'axios'
 
 import { ref, onMounted } from "vue";
+const news = ref([])
 
 onMounted(() => {
-  const ProductService = [
-    {
-      id: 1,
-      image: "https://sinaps.uz/wp-content/uploads/2023/06/3-vov-119.webp",
-      title:
-        "title1",
-        description:"decription"
-    },
-    {
-      id: 2,
-      image: "https://sinaps.uz/wp-content/uploads/2023/06/3-vov-119.webp",
-      title:
-        "title2",
-        description:"decription"
-    },
- 
-  
-    {
-      id: 9,
-      image:
-        "https://blog.obilet.com/wp-content/uploads/2023/07/0anagorsel-1-1024x683.jpeg",
-      title: "titl3",
-      description:"decription"
-    },
-  
-  ];
+axios.get('https://siyfprojectapi.pythonanywhere.com/api/uz/news/list/').then(res =>{
 
-  products.value = ProductService;
+  if(res.status == 200){
+res.data.forEach(el =>{
+  news.value.push(el)
+})
+  }
+
+})
 });
 
 const products = ref();
@@ -138,6 +121,10 @@ const responsiveOptions = ref([
 :deep .p-carousel-prev {
   display: none;
 }
+
+// :deep(.p-carousel[pv_id_2] .p-carousel-item){
+//     flex: 1 0 3.333333333333336%;
+// }
 
 
 </style>

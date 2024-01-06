@@ -6,7 +6,8 @@
             <img
                 v-for="img in imgArray"
                 :key="img"
-                :src="img"
+                :src="`https://siyfprojectapi.pythonanywhere.com/${img.image}`"
+                class="w-[200px] h-[80px] object-cover"
             />
         </Vue3Marquee>
 </div>
@@ -14,7 +15,8 @@
 </template>
 
 <script setup>
-import {ref} from 'vue'
+import {ref, onMounted} from 'vue'
+import axios from 'axios'
 
 // const sponsors = ref([
 // {
@@ -29,11 +31,19 @@ import {ref} from 'vue'
 
 // ])
 
+onMounted(()=>{
+    axios.get('https://siyfprojectapi.pythonanywhere.com/api/sponsor/list/').then(res =>{
+        console.log(res);
+        if(res.status == 200){
+            res.data.forEach(el =>{
+                imgArray.value.push(el)
+            })
+        }
+    })
+})
 
-const imgArray = [
-    'https://sponsors.vuejs.org/images/layer0.avif',
-    'https://sponsors.vuejs.org/images/plaid__inc_.svg',
-]
+
+const imgArray = ref([])
 
 </script>
 

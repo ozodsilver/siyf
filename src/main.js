@@ -21,6 +21,10 @@ const app = createApp(App);
 app.directive("focustrap", FocusTrap);
 app.directive("ripple", Ripple);
 
+
+// global variables
+app.config.globalProperties.$base = 'https://siyfprojectapi.pythonanywhere.com'
+
 app.use(createPinia());
 app.use(i18n);
 app.use(Vue3Marquee);

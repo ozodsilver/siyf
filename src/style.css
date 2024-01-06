@@ -32,7 +32,7 @@ font-family: 'Glory', sans-serif;
   }
 
   *{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
   }
 
   @import url('https://fonts.googleapis.com/css2?family=Glory:wght@500&display=swap');

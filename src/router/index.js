@@ -8,11 +8,7 @@ const router = createRouter({
     return { top: 0 };
   },
   routes: [
-    {
-      path: "/auto",
-      name: "auto",
-      component: () => import("../Authorization.vue"),
-    },
+ 
     {
       path: "/",
       name: "main",
@@ -49,19 +45,8 @@ const router = createRouter({
     {
       path: "/Dashboard",
       name: "Dashboard",
-      component: () => import("../views/Dashboard/Admin.vue"),
-      children: [
-        {
-          path: "",
-          name: "employee",
-          component: addEmployee,
-        },
-        {
-          path: "/admin/add-news",
-          name: "addNews",
-          component: addNews
-        },
-      ],
+      
+      
     },
   ],
 });

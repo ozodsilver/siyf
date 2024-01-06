@@ -4,7 +4,7 @@
       <div
         class="max-w-screen-xl text-sm font-sans flex flex-wrap items-center justify-between mx-auto p-4"
       >
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <router-link to = '/' class="flex items-center space-x-3 rtl:space-x-reverse">
           <img
             src="https://flowbite.com/docs/images/logo.svg"
             class="h-8"
@@ -14,7 +14,7 @@
             class="self-center text-white text-2xl font-semibold whitespace-nowrap"
             >Flowbite</span
           >
-        </a>
+        </router-link>
         <button
           data-collapse-toggle="navbar-dropdown"
           type="button"

@@ -2,13 +2,14 @@
   <div class="min-h-[700px] bg-black wrapper relative overflow-hidden" id="home">
     <div class="fixed top-0 z-50 w-full">
       <Navigation></Navigation>
+    
     </div>
 
     <Carousel :autoplay="40000" :itemsToShow="1" :wrap-around="true">
       <Slide v-for="image in images" :key="image">
         <div class="carousel__item p-0 relative top-[-10px]">
           <img
-            :src="image.image_url"
+            :src="`https://siyfprojectapi.pythonanywhere.com/${image.image}`"
             class="object-cover w-full brightness-50 h-[750px]"
             alt=""
           />
@@ -20,10 +21,10 @@
             <h1
               class="text-start md:text-3xl uppercase first-letter:font-extrabold first-letter:text-5xl first-letter:text-zinc-300"
             >
-              {{ image.content[0].title }}
+              {{ image.first_header }}
             </h1>
             <p class="text-xs md:text-base text-start relative mt-2">
-              {{ image.content[0].text }}
+              {{ image.first_text }}
             </p>
           </div>
 
@@ -37,10 +38,10 @@
             <h1
               class="text-start md:text-3xl uppercase first-letter:font-extrabold first-letter:text-5xl first-letter:text-gray-200"
             >
-              {{ image.content[1].title }}
+              {{ image.second_header}}
             </h1>
             <p class="text-xs md:text-base text-start relative mt-2 s">
-              {{ image.content[1].text }}
+              {{ image.second_text }}
             </p>
           </div>
         </div>
@@ -62,41 +63,30 @@ import TabView from "primevue/tabview";
 import TabPanel from "primevue/tabpanel";
 import { Carousel, Pagination, Slide } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
-
+import axios from 'axios'
 import Navigation from "../Navigation/Navigation.vue";
+import { onMounted } from "vue";
+import { ref } from "vue";
+import { loaderStore } from "../../helpers/Loding/loaderStore";
 
-const images = [
-  {
-    image_url:
-      "https://w.forfun.com/fetch/1f/1f1ffcabbcce195aa0b1364a57bd8ad5.jpeg",
-    main_title: "Eng yaxshi sarflangan mablag' bu ilmga sarflangan mablag'dir",
-    content: [
-      {
-        title: "HeaderNew1Lorem1",
-        text: "HeaderNews1LoremText1",
-      },
-      {
-        title: "HeaderNews1Lorem2",
-        text: "HeaderNews1LoremText2 lore lore lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
-      },
-    ],
-  },
-  {
-    image_url:
-      "https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg",
-    main_title: "ilm ilm",
-    content: [
-      {
-        title: "HeaderNew2Lorem3",
-        text: "HeaderNews2LoremText3",
-      },
-      {
-        title: "HeaderNews2Lorem4",
-        text: "HeaderNews2oremText4",
-      },
-    ],
-  },
-];
+
+
+const storeLoader = loaderStore()
+
+const images = ref([])
+
+
+onMounted(()=>{
+axios.get(`https://siyfprojectapi.pythonanywhere.com/api/uz/header/news/list/`).then(res =>{
+  console.log(res.data);
+images.value = res.data
+res.data.forEach(el =>{
+  images.value.push(el)
+  storeLoader.isLoaded = false
+})
+})
+})
+
 </script>
 
 <style lang="scss" scoped>

@@ -6,7 +6,7 @@
         <img src="@/assets/images/pinpng.com-signup-png-5027094.png" alt="" />
       </div>
 
-      <form class="md:w-[350px] pt-8 p-1 rounded-xl">
+      <form class="md:w-[350px] pt-8 p-1 rounded-xl" @submit.prevent="postFeedback">
         <div class="mb-5">
           <label
             for="email"
@@ -55,16 +55,38 @@
 <script setup>
 import { ref } from 'vue';
 import Textarea from 'primevue/textarea';
+import axios from 'axios';
 
 const email = ref('')
 const  phone = ref('')
 const textAreaValue = ref('')
 
-const data = {
-email:'email@gmail.com',
-phone:'998898777',
-feedback:'fuck you'
+
+// const data = {
+//   email: email.value,
+//   phone : phone.value,
+//   title: textAreaValue.value,
+//   feedback : feedback.value
+// }
+
+const postFeedback = ()=>{
+
+  axios.post('https://siyfprojectapi.pythonanywhere.com/api/feedback/create/', {
+    email: email.value,
+  phone : phone.value,
+  feedback: textAreaValue.value,
+
+  }).then(res =>{
+    console.log(res);
+    if(res.status == 200){
+      email.value = ''
+      phone.value = ''
+      textAreaValue.value = ''
+    }
+  })
+
 }
+
 
 </script>
 
