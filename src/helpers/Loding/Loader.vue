@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-[100vh] absolute top-[50%] left-[45%]">
+    <div class="min-h-[100vh] content_centered">
         <div id="wifi-loader">
     <svg class="circle-outer" viewBox="0 0 86 86">
         <circle class="back" cx="43" cy="43" r="40"></circle>
@@ -14,12 +14,15 @@
         <circle class="back" cx="17" cy="17" r="14"></circle>
         <circle class="front" cx="17" cy="17" r="14"></circle>
     </svg>
-    <div class="text" data-text="Searching"></div>
+    <div class="text" :data-text="loadingText"></div>
 </div>
     </div>
 </template>
 
 <script setup>
+import {ref} from 'vue'
+
+const loadingText = ref('loading')
 
 </script>
 
@@ -221,4 +224,11 @@
   }
 }
  
+
+ .content_centered{
+    transform: translateX(50%, 50%);
+    position:absolute;
+    top:50%;
+    right:50%;
+ }
 </style>
